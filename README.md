@@ -31,7 +31,7 @@ C9
 The story of this script comes from [a gist originally created by @nuga99](https://gist.github.com/nuga99/dd5ac250b4c98154b5065d8affec7b49), eventually I started contributing and took the script in a different direction to allow it to be interactive and dynamic.
 
 #### Supported Operating Systems
-- Tails (operating system)
+- Tails
 - Ångström distribution
 - AntiX
 - Armbian
@@ -40,7 +40,7 @@ The story of this script comes from [a gist originally created by @nuga99](https
 - BackBox
 - Bharat Operating System Solutions
 - BlankOn Linux
-- Canaima (operating system)
+- Canaima
 - Commodore OS
 - Corel Linux
 - CrunchBang Linux
@@ -51,7 +51,7 @@ The story of this script comes from [a gist originally created by @nuga99](https
 - Devuan
 - DoudouLinux
 - Dreamlinux
-- Dyson (operating system)
+- Dyson
 - Elementary OS
 - Emdebian Grip
 - Emmabuntüs
@@ -80,7 +80,7 @@ The story of this script comes from [a gist originally created by @nuga99](https
 - Musix GNU+Linux
 - MX Linux
 - OpenZaurus
-- Pardus (operating system)
+- Pardus
 - Parrot OS
 - Parsix
 - Proxmox Virtual Environment
@@ -91,16 +91,16 @@ The story of this script comes from [a gist originally created by @nuga99](https
 - Skolelinux
 - Slax
 - SolydXK
-- SONiC (operating system)
+- SONiC
 - SparkyLinux
 - SteamOS
-- Subgraph (operating system)
+- Subgraph
 - Sunwah Linux
 - TurnKey Linux Virtual Appliance Library
 - Ubuntu
 - Univention Corporate Server
 - UserLinux
-- USU (operating system)
+- USU
 - Vyatta
 - VyOS
 - Webconverger
