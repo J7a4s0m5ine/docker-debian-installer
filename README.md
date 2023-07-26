@@ -114,6 +114,16 @@ The story of this script comes from [a gist originally created by @nuga99](https
 #### Reboot Confirmation
 ![image](https://user-images.githubusercontent.com/122838399/256332022-771806fe-ae78-4ee7-bc69-8919a4b752a2.png)
 
+
+### Things to fix and or provide as new features:
+
+- Check if docker is installed/Allow for uninstall or changes
+- Check if previous entry in sources.lists exists
+     - Delete all entries in sources.lists
+- Change window size to be dynamic
+- Provide functions for non-debian systems
+- Generalize the entire approach to be able to provide an apt HTTP URL and install anything!!
+
 ### License
 GNU General Public License v2.0 (GPL-2.0)
 https://www.tldrlegal.com/license/gnu-general-public-license-v2
