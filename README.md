@@ -3,9 +3,10 @@
 2. [Origin](#origin)
 3. [Supported Operating Systems](#supported-operating-systems)
 4. [Screenshots](#screenshots)
-5. [The Possible Future](#things-to-fix-and-or-provide-as-new-features)
-6. [License](#license)
-7. [Warranty](#warranty)
+5. [Contributing](#contributing)
+6. [The Possible Future](#things-to-fix-and-or-provide-as-new-features)
+7. [License](#license)
+8. [Warranty](#warranty)
 
 
 # Docker Debian Interactive Installer
@@ -124,6 +125,10 @@ The story of this script comes from [a gist originally created by @nuga99](https
 #### Reboot Confirmation
 ![image](https://user-images.githubusercontent.com/122838399/256332022-771806fe-ae78-4ee7-bc69-8919a4b752a2.png)
 
+
+### Contributing
+
+Feel free to fork and contribute, send a pull request with any changes. Easy. as. pie. Okay let's be honest, making a pie from scratch is harder than sending a pull request.
 
 ### Things to fix and or provide as new features:
 
