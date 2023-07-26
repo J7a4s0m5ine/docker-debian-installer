@@ -19,7 +19,7 @@ choose_distro(){
         args+=("$i" "${distro_choices[$i]}")
     done
     #require setting to variable first to fix syntax highlighting in VSCode
-    num=$(whiptail --title "Available Distros" --menu --notags --nocancel "Choose a distribution (if you're on ParrotOS you'll likely want debian)" 25 78 16 "${args[@]}" 3>&1 1>&2 2>&3)
+    num=$(whiptail --title "Available Distros" --menu --notags --nocancel "Choose a distribution (if you're on ParrotOS you'll likely want debian)" $window_size_menu "${args[@]}" 3>&1 1>&2 2>&3)
     distro_choosen=${distro_choices[num]}
     null_error_check $distro_choosen
     args=()
@@ -32,7 +32,7 @@ choose_codename(){
         args+=("$i" "${codename_choices[$i]}")
     done
     #require setting to variable first to fix syntax highlighting in VSCode
-    num=$(whiptail --title "Available Builds" --menu --notags --nocancel "Choose a build name" 25 78 16 "${args[@]}" 3>&1 1>&2 2>&3)
+    num=$(whiptail --title "Available Builds" --menu --notags --nocancel "Choose a build name" $window_size_menu "${args[@]}" 3>&1 1>&2 2>&3)
     codename_choosen=${codename_choices[num]}
     args=()
 }
@@ -46,7 +46,7 @@ choose_arch(){
         args+=("$i" "${arch_choices[$i]}")
     done
     #require setting to variable first to fix syntax highlighting in VSCode
-    num=$(whiptail --title "Available Archs" --menu --notags --nocancel "Choose an arch" 25 78 16 "${args[@]}" 3>&1 1>&2 2>&3)
+    num=$(whiptail --title "Available Archs" --menu --notags --nocancel "Choose an arch" $window_size_menu "${args[@]}" 3>&1 1>&2 2>&3)
     arch_choosen=${arch_choices[num]}
     args=()
 }
@@ -62,7 +62,7 @@ contrib_statement(){
             statement+="and ${contributors[$i]}."
         fi
     done
-    whiptail --title "$welcome" --msgbox "$statement" 8 78
+    whiptail --title "$welcome" --msgbox "$statement" $window_size
 }
 
 function null_error_check(){
@@ -75,8 +75,8 @@ function null_error_check(){
     fi
 }
 
-function confirm_whiptail(){
-    selection=$(whiptail --title "$1" --yesno "$2" 25 78 16 3>&1 1>&2 2>&3)
+function confirm(){
+    selection=$(whiptail --title "$1" --yesno "$2" $window_size 3>&1 1>&2 2>&3)
 }
 
 function run_install(){
@@ -95,8 +95,13 @@ function run_install(){
     # Add user to docker group for using docker without sudo command.
     sudo gpasswd -a "${USER}" docker
 
-    confirm_whiptail "Reboot Machine?" "Docker has been installed successfully, a reboot is required, proceed with reboot?" && sudo reboot
+    confirm "Reboot Machine?" "Docker has been installed successfully, a reboot is required, proceed with reboot?" && sudo reboot
     
+}
+
+function resize_window(){
+    window_size="$(( $(tput lines) *3/4 )) $(( $(tput cols) *3/4 ))"
+    window_size_menu="$(( $(tput lines)*3/4 )) $(( $(tput cols) *3/4 )) $(( $(tput lines)/3 ))"
 }
 
 #used for testing
@@ -107,7 +112,9 @@ function run_install_fake(){
 
 contributors=(@nuga99 @DavoedM)
 unsupported_distros=("centos" "fedora" "rhel" "sles" "static")
+
 main(){
+    resize_window
     contrib_statement
     choose_distro
     choose_codename
@@ -121,7 +128,7 @@ main(){
         install_mode=run_install
     fi
 
-    confirm_whiptail "Confirm Installation" "You've choosen to install $distro_choosen - $codename_choosen on $arch_choosen, continue?" && $install_mode
+    confirm "Confirm Installation" "You've choosen to install $distro_choosen - $codename_choosen on $arch_choosen, continue?" && $install_mode
 }
 
 main $1 #pass script args to main
