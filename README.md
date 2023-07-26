@@ -1,3 +1,12 @@
+# Table of Contents
+1. [Usage](#usage)
+2. [Origin](#origin)
+3. [Supported Operating Systems](#supported-operating-systems)
+4. [The Possible Future](#things-to-fix-and-or-provide-as-new-features)
+5. [License](#license)
+6. [Warranty](#warranty)
+
+
 # Docker Debian Interactive Installer
 
 This small script allows a user to add proper sources (debs) to their debian based installation interactively for a smooth and quick experience. Install Docker on any debian distro interactively!
