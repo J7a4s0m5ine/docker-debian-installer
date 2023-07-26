@@ -95,6 +95,25 @@ The story of this script comes from [a gist originally created by @nuga99](https
 - Webconverger
 - Wienux
 
+### Screenshots
+#### Contrib:
+![image](https://user-images.githubusercontent.com/122838399/256328109-bdd96ef4-9f18-4471-b4ca-d569ac765ba3.png)
+
+#### Distro Selection
+![image](https://user-images.githubusercontent.com/122838399/256328515-5e1cc84b-6f4a-4da9-b6c3-d06d5d66d587.png)
+
+#### Build Selection
+![image](https://user-images.githubusercontent.com/122838399/256329054-1447dcab-5dd0-45bf-ba09-92ec58898b75.png)
+
+#### Arch Selection
+![image](https://user-images.githubusercontent.com/122838399/256329136-34e03c14-fb34-4cae-9e4f-4346126f9f6c.png)
+
+#### Installation Confirmation
+![image](https://user-images.githubusercontent.com/122838399/256329219-fe94b056-884f-43d6-8d62-69bc1bce9b0a.png)
+
+#### Reboot Confirmation
+![image](https://user-images.githubusercontent.com/122838399/256332022-771806fe-ae78-4ee7-bc69-8919a4b752a2.png)
+
 ### License
 GNU General Public License v2.0 (GPL-2.0)
 https://www.tldrlegal.com/license/gnu-general-public-license-v2
