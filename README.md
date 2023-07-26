@@ -15,7 +15,7 @@ C9
 
 ### Origin
 
-The story of this script comes from a gist originally created by @nuga99, eventuall I started contributing and took the script in a different direction to allow it to be interactive and dynamic.
+The story of this script comes from [a gist originally created by @nuga99](https://gist.github.com/nuga99/dd5ac250b4c98154b5065d8affec7b49), eventually I started contributing and took the script in a different direction to allow it to be interactive and dynamic.
 
 #### Supported Operating Systems
 Tails (operating system)
