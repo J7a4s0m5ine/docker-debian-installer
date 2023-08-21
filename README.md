@@ -107,8 +107,6 @@ The story of this script comes from [a gist originally created by @nuga99](https
 - Wienux
 
 ### Screenshots
-#### Contrib:
-![image](https://user-images.githubusercontent.com/122838399/256328109-bdd96ef4-9f18-4471-b4ca-d569ac765ba3.png)
 
 #### Distro Selection
 ![image](https://user-images.githubusercontent.com/122838399/256328515-5e1cc84b-6f4a-4da9-b6c3-d06d5d66d587.png)
