@@ -1,6 +1,6 @@
 #!/bin/bash
 
-##### Interactive script by C9 (@C922A10971734)
+##### Interactive script by @J7a4s0m5ine
 # Original script and contributions by @DavoedM and @nuga99
 #
 
@@ -11,7 +11,7 @@
 
 ##### Warranty
 #
-# I (@C922A10971734) am not responsible for anything you do with this script.
+# I (@J7a4s0m5ine) am not responsible for anything you do with this script.
 
 choose_distro(){
     distro_choices=($(curl -s https://download.docker.com/linux/ | grep -oP '<a href=".+?">(?!\...)\K.+?(?=\/<)'))
@@ -53,7 +53,7 @@ choose_arch(){
 
 contrib_statement(){
     welcome="Docker installation script for Debian-like package systems"
-    statement="Built with love by @C922A10971734, original contributions by " 
+    statement="Built with love by @J7a4s0m5ine, original contributions by " 
     for ((i = 0; i < ${#contributors[@]}; ++i)); do
         if [[ i+1 -lt ${#contributors[@]} ]]
         then
